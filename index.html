@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styler.css">
+    <script src="script.js" defer></script>
+
+    <title>Pic-Generator</title>
+</head>
+
+<body>
+    <h3>Photo generator (with flickr api)</h3>
+
+    <div class="container">
+        <input type="text" class="input-search" id="input-search" placeholder="Keyword">
+        <!--keyword-->
+        <select class="size-selector">
+            <!--size-->
+            <option value="t">100px</option>
+            <option value="m">240px</option>
+            <option value="n">320px</option>
+        </select>
+        <input type="number" class="amount" id="amount" placeholder="Amount">
+        <!--amount-->
+        <button>Search</button>
+        <button onClick="window.location.reload();">Refresh Page</button>
+    </div>
+    <div id="wrapper"> </div>
+</body>
+
+</html>
